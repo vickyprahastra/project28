@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: vicky_test_development
+  database: vicky_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: vicky_test_test
+  database: vicky_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: vicky_test_production
-  username: vicky_test
+  database: vicky_production
+  username: vicky
   password: <%= ENV['VICKY_TEST_DATABASE_PASSWORD'] %>
