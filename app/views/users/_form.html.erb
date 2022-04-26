@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :location %>
-    <%= form.text_field :location %>
+    <%= form.select :location, ActiveSupport::TimeZone.all.map(&:name), {}, prompt: 'Select One' %>
   </div>
 
   <div class="actions">
