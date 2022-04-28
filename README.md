@@ -1,17 +1,17 @@
 # README
 
-* Ruby version
-2.7.3
+**Configuration**
 
-* System dependencies
-
-* Configuration
 - run 'bundle'
+
 - run 'yarn'
 
-* Database creation
+**Database creation**
+
 - rails db:setup
 
-* Run server
+**Run server**
+
 - run 'rails server'
+
 - run 'bundle exec sidekiq'
